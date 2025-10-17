@@ -1,0 +1,57 @@
+<!doctype html> <html lang="ko"> 
+  <head>
+     <meta charset="utf-8" /> 
+     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+     <title>loading</title> 
+     <link rel="stylesheet" href="../css/loading.css" /> 
+    </head>
+     <body> <div class="wrap"> 
+      <main class="phone" role="main"> 
+      <section class="canvas"> 
+        <!-- 텍스트 --> 
+         <h2 class="loading-text">결과 분석 중<span class="dots">...</span></h2>
+          <!-- 강아지 이미지 (3개) --> <div class="dog-icons">
+             <img src="../image/mainDogs.png" alt="강아지1"> 
+            </div> </section> </main> </div>
+
+<script>
+  console.log("✅ loading.html script 실행됨");
+
+  window.addEventListener("DOMContentLoaded", () => {
+    console.log("✅ DOMContentLoaded 실행됨");
+    // 🔹 0.5초 후에 fetch 시작 (화면이 먼저 렌더링되게)
+    setTimeout(sendResult, 500);
+  });
+
+  async function sendResult() {
+    const data = {
+      q1: sessionStorage.getItem("Q1"),
+      q2: sessionStorage.getItem("Q2"),
+      q3: sessionStorage.getItem("Q3"),
+      q4: sessionStorage.getItem("Q4")
+    };
+
+    console.log("📦 전송할 데이터:", data);
+
+    try {
+      const res = await fetch("http://localhost:8080/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.text();
+      console.log("✅ 서버 결과:", result);
+
+      // 🔹 최소 1.5초 동안 로딩 유지
+      await new Promise(resolve => setTimeout(resolve, 1500));
+
+      // 🔹 결과 페이지로 이동
+      window.location.href = `${result}.html`;
+
+    } catch (error) {
+      console.error("❌ 서버 요청 실패:", error);
+      alert("서버 연결에 문제가 있어요 😢");
+    }
+  }
+</script>

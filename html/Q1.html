@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>친구를 만났다 🐶</title>
+  <link rel="stylesheet" href="../css/Question.css" />
+</head>
+<body>
+  <div class="wrap">
+    <main class="phone" role="main" aria-labelledby="q1-title">
+      <div class="tag">Q1</div>
+
+      <section class="canvas">
+        <!-- 강아지 & 발바닥 이미지 -->
+        <img src="/../image/QuestionsDog.png" alt="강아지" class="dog">
+        <img src="/../image/QuestionsPaw.png" alt="발바닥" class="paw-top">
+        <img src="/../image/QuestionsPaw.png" alt="발바닥" class="paw-bottom">
+
+        <h1 id="q1-title" class="question">
+          Q. 산책하다가 다른 강아지를 만났을 때,<br/>
+          우리 강아지는?
+        </h1>
+        <hr>
+
+        <div class="options">
+          <button class="option" onclick="selectAnswer('e')">
+            “친구다!” 하고 먼저 다가간다
+          </button>
+
+          <button class="option" onclick="selectAnswer('i')">
+            눈치만 슬쩍… 조용히 다른 길로 간다
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function selectAnswer(value){
+      sessionStorage.setItem("Q1", value);
+      window.location.href = "Q2.html"; // 다음 페이지 이동
+    }
+  </script>
+</body>
+</html>

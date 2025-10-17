@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "온글잎";
+    src:
+      url("../fonts/온글잎 밑미.ttf") format("truetype");
+    
+  }
+
+  /* ---------- 색상 ---------- */
+  :root {
+    --bg: #fbf5ee;
+    --ink: #2f2a25;
+    --leaf: #7c9076;
+    --card: #fffaf3;
+    --shadow: 0 2px 10px rgba(0,0,0,.04);
+  }
+  
+  /* ---------- 전체 ---------- */
+  body {
+    margin: 0;
+    background: var(--bg);
+    font-family: "온글잎", "Apple SD Gothic Neo", sans-serif;
+    color: var(--ink);
+  }
+  
+  .wrap {
+    min-height: 100vh;
+    display: grid;
+    place-items: start center;
+    padding: 24px 16px 40px;
+  }
+  
+  /* ---------- 폰 모양 ---------- */
+  .phone {
+    width: min(420px, 100%);
+    background: var(--bg);
+    border-radius: 26px;
+    box-shadow: var(--shadow);
+    padding: 18px 18px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tag {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    color: #9a9a9a;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+  
+  /* ---------- 캔버스 ---------- */
+  .canvas {
+    background: var(--card);
+    border-radius: 22px;
+    padding: 28px 20px 34px;
+    margin-top: 28px;
+    position: relative;
+    min-height: 640px;
+  }
+  
+  /* ---------- 장식 이미지 ---------- */
+  .deco-top-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 80px;
+  }
+  
+  .deco-bottom-right {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 80px;
+  }
+  
+  /* ---------- 강아지 & 발바닥 ---------- */
+  .dog {
+    position: absolute;
+    top: 53px;
+    left: 115px;
+    width: 50px;
+  }
+  
+  .paw-top {
+    position: absolute;
+    top: 217px;
+    left: 83px;
+    width: 45px;
+    transform: rotate(31.24deg);
+  }
+  
+  .paw-bottom {
+    position: absolute;
+    top: 64px;
+    left: 64px;
+    width: 45px;
+    transform: rotate(-16.36deg);
+  }
+  
+  /* ---------- 질문 ---------- */
+  .question {
+    margin-top: 130px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.8;
+  }
+  
+  hr {
+    width: 80%;
+    border: none;
+    border-top: 1.5px solid #bcb4a5;
+    margin: 20px auto;
+  }
+  
+  /* ---------- 선택지 ---------- */
+  .options {
+    margin-top: 22px;
+    display: grid;
+    gap: 22px;
+  }
+  
+  .option {
+    font-family: "온글잎", "Apple SD Gothic Neo", sans-serif;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: 2px solid var(--leaf);
+    border-radius: 12px;
+    background: #fffdf8;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: var(--shadow);
+  }
+  
+  
+  .option:hover {
+    transform: translateY(-2px);
+  }
+  

@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "JejuDoldam";
+    src:
+      local("EF_jejudoldam"),
+      url("../fonts/EF_Jejudoldam.ttf") format("truetype"),
+      url("../fonts/EF_Jejudoldam.otf") format("opentype");
+    font-display: swap;
+  }
+  
+  /* ---------- 색상 ---------- */
+  :root {
+    --bg: #fff9ee;
+    --card: #fffaf3;
+    --brown: #5c4432;
+    --green: #7fa35a;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* ---------- 전체 ---------- */
+  body {
+    margin: 0;
+    background: var(--bg);
+    font-family: "JejuDoldam", "Apple SD Gothic Neo", sans-serif;
+    color: var(--brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* ---------- 폰 모양 ---------- */
+  .phone {
+    width: 375px;
+    height: 812px;
+    background: var(--card);
+    border-radius: 26px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* ---------- 내부 컨텐츠 영역 ---------- */
+  .canvas {
+    position: relative;
+    width: calc(100% - 36px);
+    height: calc(100% - 36px);
+    margin: 18px;
+    border: 4px dashed var(--brown);
+    border-radius: 22px;
+    text-align: center;
+    padding: 60px 24px 40px;
+    box-sizing: border-box;
+  }
+  
+  /* ---------- 제목 ---------- */
+  .title-img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 100px auto 20px;
+  }
+ 
+  
+  /* ---------- 부제목 ---------- */
+  .subtitle {
+    color: #8b7355;
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  /* ---------- 강아지 아이콘 ---------- */
+  .dog-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .dog-icons img {
+    width: 260px;
+    height: auto;
+  }
+  
+  /* ---------- 버튼 ---------- */
+  .start-btn {
+    background-color: #ded1c4;
+    color: var(--brown);
+    font-size: 26px;
+    font-weight: bold;
+    padding: 30px 85px;
+    border: 3px solid var(--brown);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: "JejuDoldam", "Apple SD Gothic Neo", sans-serif;
+  }
+  
+  .start-btn:hover {
+    background-color: #cbb9a8;
+  }
+  

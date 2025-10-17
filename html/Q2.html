@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>장난감 선물 🎾</title>
+  <link rel="stylesheet" href="../css/Question.css" />
+</head>
+<body>
+  <div class="wrap">
+    <main class="phone" role="main" aria-labelledby="q1-title">
+      <div class="tag">Q2</div>
+
+      <section class="canvas">
+        <!-- 강아지 & 발바닥 이미지 -->
+        <img src="/../image/QuestionsDog.png" alt="강아지" class="dog">
+        <img src="/../image/QuestionsPaw.png" alt="발바닥" class="paw-top">
+        <img src="/../image/QuestionsPaw.png" alt="발바닥" class="paw-bottom">
+
+        <h1 id="q1-title" class="question">
+          Q. 새로운 장난감을 처음 받았을 때,<br/>
+          우리 강아지는?
+        </h1>
+        <hr>
+
+        <div class="options">
+          <button class="option" onclick="selectAnswer('n')">
+            “이건 내거야!” 바로 가지고 논다
+          </button>
+
+          <button class="option" onclick="selectAnswer('s')">
+            킁킁 조심스럽게 탐색부터 한다
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function selectAnswer(value){
+      sessionStorage.setItem("Q2", value);
+      window.location.href = "Q3.html"; // 다음 페이지 이동
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+/* ---------- 폰트 변경 ---------- */
+@font-face {
+  font-family: "Sejong";
+  src: url("../fonts/SejongGeulggot.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Memoment";
+  src: url("../fonts/memomentKkukkkuk.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* ---------- 색상 ---------- */
+:root {
+  --bg: #fff9ee;
+  --brown: #5c4432;
+  --orange: #e8863c;
+  --green: #7c9076;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- 전체 ---------- */
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Sejong", "Apple SD Gothic Neo", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ---------- 아이폰 13 mini 프레임 ---------- */
+.phone {
+  width: 375px;
+  height: 812px;
+  background: var(--bg);
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- 내부 ---------- */
+.canvas {
+  padding: 30px 22px;
+  text-align: center;
+}
+
+/* ---------- 상단 MBTI 타입 ---------- */
+.type-label {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+/* ---------- 결과 박스 ---------- */
+.result-box {
+  background: #fffaf3;
+  border-radius: 12px;
+  padding: 30px 22px 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* ---------- ESFP ---------- */
+.result-esfp {
+  background: #fff6e9; /* 연한 크림 */
+}
+.result-esfp .title,
+.result-esfp .type {
+  color: #e8863c;
+}
+.result-esfp .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ---------- ESTP ---------- */
+.result-estp {
+  background: #fff1e9; /* 살구빛 */
+}
+.result-estp .title,
+.result-estp .type {
+  color: #e86b2c;
+}
+.result-estp .course-btn {
+  border: 2px solid #80967E;
+  color: #4d3927;
+}
+
+/* ---------- ENTP ---------- */
+.result-entp {
+  background: #fdf1ec; /* 핑크 톤 */
+}
+.result-entp .title,
+.result-entp .type {
+  color: #d06b44;
+}
+.result-entp .course-btn {
+  border: 2px solid #80967E;
+  color: #4a3a2b;
+}
+
+/* ---------- ISFP ---------- */
+.result-isfp {
+  background: #fff6ef; /* 따뜻한 크림톤 */
+}
+.result-isfp .title,
+.result-isfp .type {
+  color: #e8905c; /* 살구 오렌지 */
+}
+.result-isfp .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ---------- INFP ---------- */
+.result-infp {
+  background: #F7EFEF; /* 연한 로즈톤 */
+}
+.result-infp .title,
+.result-infp .type {
+  color: #e67b6b; /* 코랄 핑크 */
+}
+.result-infp .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ---------- ISFJ ---------- */
+.result-isfj {
+  background: #fff8ef; /* 크림베이지 */
+}
+.result-isfj .title,
+.result-isfj .type {
+  color: #b36b3c; /* 브라운오렌지 */
+}
+.result-isfj .course-btn {
+  border: 2px solid #80967E;
+  color: #4a3a2b;
+}
+
+/* ---------- INFJ ---------- */
+.result-infj {
+  background: #EEEAF1; /* 연보라 회색톤 */
+}
+.result-infj .title,
+.result-infj .type {
+  color: #F2976C; /* 라벤더 보라 */
+}
+.result-infj .course-btn {
+  border: 2px solid #80967E;
+  color: #4a3a2b;
+}
+
+
+/* ---------- ISTJ ---------- */
+.result-istj {
+  background: #F3EFE6; 
+}
+.result-istj .title,
+.result-istj .type {
+  color: #5C4432; 
+}
+.result-istj .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ----------ESTJ ---------- */
+.result-estj {
+  background: #F4EBDD; 
+}
+.result-estj .title,
+.result-estj .type {
+  color: #5C4432; 
+}
+.result-estj .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ----------ENTJ ---------- */
+.result-entj {
+  background: #E9ECEF; 
+}
+.result-entj .title,
+.result-entj .type {
+  color: #5C4432; 
+}
+.result-entj .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ----------ENFJ ---------- */
+.result-enfj {
+  background: #FFF2E9; 
+}
+.result-enfj .title,
+.result-enfj .type {
+  color: #5C4432; 
+}
+.result-enfj .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ----------intp ---------- */
+.result-intp {
+  background: #E6EFEA; 
+}
+.result-intp .title,
+.result-intp .type {
+  color: #5C4432; 
+}
+.result-intp .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ----------intj ---------- */
+.result-intp {
+  background: #E7EBF3; 
+}
+.result-intp .title,
+.result-intp .type {
+  color: #5C4432; 
+}
+.result-intp .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ----------istp ---------- */
+.result-istp {
+  background: #EFE9E3; 
+}
+.result-istp .title,
+.result-istp .type {
+  color: #5C4432; 
+}
+.result-istp .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ----------esfj ---------- */
+.result-esfj {
+  background: #FFF2E7; 
+}
+.result-esfj .title,
+.result-esfj .type {
+  color: #5C4432; 
+}
+.result-esfj .course-btn {
+  border: 2px solid #80967E;
+  color: #5c4432;
+}
+
+/* ---------- 텍스트들 ---------- */
+.subtitle {
+  font-size: 24px;
+  color: var(--brown);
+  margin-bottom: 6px;
+}
+
+.title {
+  font-family: "Memoment", "Apple SD Gothic Neo", sans-serif;
+  color: var(--orange);
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* ---------- 강아지 이미지 ---------- */
+.dog-img {
+  width: 150px;
+  height: auto;
+  margin: 10px 0 6px;
+}
+
+/* ---------- 타입 이름 ---------- */
+.type {
+  font-family: "Memoment", "Apple SD Gothic Neo", sans-serif;
+  color: var(--orange);
+  font-size: 37px;
+  position: relative;
+  top: -12px;
+  margin-bottom: 20px;
+}
+
+.desc {
+  text-align: left;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.desc .highlight {
+  display: block;             
+  font-size: 25px;
+  color: #961E1E;
+  font-weight: bold;
+  margin-bottom: 4px;         
+}
+
+.desc p {
+  display: block;            
+  font-size: 25px;
+  color: var(--brown);
+  line-height: 1.4;
+  margin: 2px 0;
+}
+/* ---------- 버튼 ---------- */
+.course-btn {
+  display: block;              /* 🔥 버튼이 독립된 줄로 내려감 */
+  margin: 20px auto 0;         /* 🔥 위 여백 + 중앙 정렬 */
+  background: #fffdf8;
+  border: 2px solid var(--green);
+  border-radius: 12px;
+  color: var(--brown);
+  font-size: 25px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "Sejong", "Apple SD Gothic Neo", sans-serif;
+}
+
+.course-btn:hover {
+  background: #eff1e8;
+}

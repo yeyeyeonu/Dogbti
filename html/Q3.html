@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>혼나는 중 🐶</title>
+  <link rel="stylesheet" href="../css/Question.css" />
+</head>
+<body>
+  <div class="wrap">
+    <main class="phone" role="main" aria-labelledby="q1-title">
+      <div class="tag">Q3</div>
+
+      <section class="canvas">
+        <!-- 강아지 & 발바닥 이미지 -->
+        <img src="/../image/QuestionsDog.png" alt="강아지" class="dog">
+        <img src="/../image/QuestionsPaw.png" alt="발바닥" class="paw-top">
+        <img src="/../image/QuestionsPaw.png" alt="발바닥" class="paw-bottom">
+
+        <h1 id="q1-title" class="question">
+          Q. 혼날 때,<br/>
+          우리 강아지는?
+        </h1>
+        <hr>
+
+        <div class="options">
+          <button class="option" onclick="selectAnswer('f')">
+            “미안해요...” 조용히 꼬리를 내린다
+          </button>
+
+          <button class="option" onclick="selectAnswer('t')">
+            "나 혼나는거야?" 눈을 땡그랗게 뜬다
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function selectAnswer(value){
+      sessionStorage.setItem("Q3", value);
+      window.location.href = "Q4.html"; // 다음 페이지 이동
+    }
+  </script>
+</body>
+</html>
