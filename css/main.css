@@ -1,12 +1,11 @@
 @font-face {
-    font-family: "JejuDoldam";
-    src:
-      local("EF_jejudoldam"),
-      url("../fonts/EF_jejudoldam.woff2") format("truetype"),
-      url("../fonts/EF_jejudoldam.woff2") format("opentype");
-    font-display: swap;
-  }
-  
+  font-family: "JejuDoldam";
+  src: 
+    url("../fonts/EF_jejudoldam.woff2") format("woff2"),
+    url("../fonts/EF_jejudoldam.woff") format("woff");
+  font-display: swap;
+}
+
   /* ---------- 색상 ---------- */
   :root {
     --bg: #fff9ee;
