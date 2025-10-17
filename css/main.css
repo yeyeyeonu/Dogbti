@@ -2,8 +2,8 @@
     font-family: "JejuDoldam";
     src:
       local("EF_jejudoldam"),
-      url("../fonts/EF_Jejudoldam.ttf") format("truetype"),
-      url("../fonts/EF_Jejudoldam.otf") format("opentype");
+      url("../fonts/EF_Jejudoldam.woff2") format("truetype"),
+      url("../fonts/EF_Jejudoldam.woff2") format("opentype");
     font-display: swap;
   }
   
