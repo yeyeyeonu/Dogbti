@@ -34,22 +34,23 @@ body {
 /* ---------- 아이폰 13 mini 프레임 ---------- */
 .phone {
   width: 375px;
-  height: 812px;
+  height: 100dvh; /* ✅ Safari·Chrome 모두 대응 (주소창 높이 제외) */
+  max-height: none; /* ✅ 고정 제한 없애기 */
   background: var(--bg);
   border-radius: 26px;
   box-shadow: var(--shadow);
   position: relative;
   overflow-y: auto; /* ✅ 세로 스크롤 허용 */
   overflow-x: hidden; /* ✅ 가로 스크롤 방지 */
-  -webkit-overflow-scrolling: touch; /* ✅ iPhone 부드러운 스크롤 */
+  -webkit-overflow-scrolling: touch; /* ✅ iOS 부드러운 스크롤 */
 }
 
 /* ---------- 내부 ---------- */
 .canvas {
   padding: 30px 22px;
   text-align: center;
-  min-height: 100%; /* ✅ 내용이 짧아도 꽉 차게 */
   box-sizing: border-box;
+  min-height: 100%;
 }
 
 /* ---------- 상단 MBTI 타입 ---------- */
