@@ -354,7 +354,7 @@ body {
 
 /* ---------- 각 버튼 이미지 ---------- */
 .share-img {
-  width: 80%; /* 아이폰 13 mini 기준 폭에 맞게 조정 */
+  width: 60%; /* 아이폰 13 mini 기준 폭에 맞게 조정 */
   max-width: 300px; /* 너무 커지지 않게 제한 */
   height: auto;
   display: block;
